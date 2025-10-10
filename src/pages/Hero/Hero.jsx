@@ -13,7 +13,10 @@ const Hero = () => {
 
     return (
         <div>
-            <h1>hello ami hero</h1>
+            <div className='text-center mb-10'>
+                <h1 className='text-5xl p-3'>Trending Apps</h1>
+            <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
+            </div>
         </div>
     );
 };

@@ -2,9 +2,10 @@ import React from 'react';
 import heroimage from '../../assets/hero.png';
 const Banner = () => {
     return (
-        <div className='text-center'>
+        <div>
+                <div className='text-center w-[1440px] mx-auto'>
             <div className=' text-7xl'>
-                <h1 className='text-[#001931]'>We Build </h1>
+                <h1 className='text-[rgb(0,25,49)]'>We Build </h1>
                 <span className='text-[#8148EA]'>Productive </span>
                  <span className='text-[#001931]'>Apps</span>
             </div>
@@ -18,9 +19,36 @@ const Banner = () => {
                 <button className='btn' >App Store</button>
             </div>
             <div className=' w-[900px] mx-auto mt-5'>
-                <img className='justify-center' src={heroimage} alt="" />
+                <img src={heroimage} className='justify-center' alt="" />
             </div>
+           
         </div>
+           <section className='bg-[#632EE3] text-white text-center '>
+                <div className='pt-20 pb-20'>
+                    <div className='mb-10'>
+                        <h1 className='font-bold text-5xl'>Trusted by Millions, Built for You</h1>
+                    </div>
+                    <div className='flex justify-center gap-8'>
+                        <div className=''>
+                        <h6>tOtal Downloads</h6>
+                        <h1 className='font-extrabold text-[64px]'>29.6M</h1>
+                        <h5 className='text-[16px] '>21% more than last month</h5>
+                    </div>
+                    <div>
+                        <h6>tOtal Downloads</h6>
+                        <h1 className='font-extrabold text-[64px]'>29.6M</h1>
+                        <h5 className='text-[16px] '>21% more than last month</h5>
+                    </div>
+                    <div>
+                        <h6>tOtal Downloads</h6>
+                        <h1 className='font-extrabold text-[64px]'>29.6M</h1>
+                        <h5 className='text-[16px] '>21% more than last month</h5>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+      
     );
 };
 
