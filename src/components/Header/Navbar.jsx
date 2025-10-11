@@ -1,10 +1,13 @@
 import React from "react";
 
+import image from '../../assets/logo.png'
+import { Link } from "react-router";
+
 const Navbar = () => {
     const links = <>
-        <li className="m-2 text-[#000000]">Home</li>
-        <li className="m-2 text-[#000000]">About</li>
-        <li className="m-2 text-[#000000]">Installation</li>
+        <Link to='/'><li className="m-2 text-[#000000]">Home</li></Link>
+        <Link to='/about'> <li className="m-2 text-[#000000]">Apps</li></Link>
+        <Link to='/installation'><li className="m-2 text-[#000000]">Installation</li></Link>
     </>
   return (
     <div className="navbar  shadow-sm">
@@ -34,7 +37,11 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-pink-400">HERO.IO</a>
+          <Link to='/'>
+          <a className="btn btn-ghost text-xl text-pink-400">
+          <img src={image} className="w-5" alt="" />
+          HERO.IO</a>
+          </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

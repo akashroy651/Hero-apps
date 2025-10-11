@@ -27,10 +27,10 @@ const Banner = () => {
             </div>
 
             <div className='mt-4'>
-                <button onClick={playStoreClick} className='btn mr-2'>
+                <button onClick={playStoreClick} className='btn mr-4 font-semibold text-[20px]'>
                     <img src={playstore} className='w-5' alt="" />
                      Google Play</button>
-                <button onClick={appStore} className='btn' >
+                <button onClick={appStore} className='btn font-semibold text-[20px]' >
                     <img src={appstore} className='w-5' alt="" />
                     App Store</button>
             </div>
@@ -51,14 +51,14 @@ const Banner = () => {
                         <h5 className='text-[16px] '>21% more than last month</h5>
                     </div>
                     <div>
-                        <h6>tOtal Downloads</h6>
-                        <h1 className='font-extrabold text-[64px]'>29.6M</h1>
-                        <h5 className='text-[16px] '>21% more than last month</h5>
+                        <h6>Total Reviews</h6>
+                        <h1 className='font-extrabold text-[64px]'>906K</h1>
+                        <h5 className='text-[16px] '>46% more than last month</h5>
                     </div>
                     <div>
-                        <h6>tOtal Downloads</h6>
-                        <h1 className='font-extrabold text-[64px]'>29.6M</h1>
-                        <h5 className='text-[16px] '>21% more than last month</h5>
+                        <h6>Active Apps</h6>
+                        <h1 className='font-extrabold text-[64px]'>132+</h1>
+                        <h5 className='text-[16px] '>31 more will Launch</h5>
                     </div>
                     </div>
                 </div>
