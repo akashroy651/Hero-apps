@@ -16,6 +16,7 @@ export const router = createBrowserRouter([
     children: [
         {
             index:true,
+            loader:()=>fetch('heroData.json'),
             path:"/",
             Component:Home,
         }

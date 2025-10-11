@@ -7,7 +7,7 @@ const Navbar = () => {
         <li className="m-2 text-[#000000]">Installation</li>
     </>
   return (
-    <div className="navbar  shadow-sm mx-10">
+    <div className="navbar  shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
