@@ -1,5 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import Apps from '../Apps/Apps';
+import { Link } from 'react-router';
+import Total from '../Total/Total';
 
 const Hero = ({data}) => {
     const [allHero, setAllHero] = useState([]);
@@ -20,13 +22,16 @@ const Hero = ({data}) => {
 
             <Suspense fallback={<span>loading................</span>}>
             {/* <Apps data={data}></Apps> */}
-               <div className='w-[1440px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+               <div className='w-[1440px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10'>
                  {
                     data.map((singleApps)=><Apps key={singleApps.id} singleApps={singleApps}></Apps>)
                 }
                </div>
+                <Link to='/about'><button className='btn bg-amber-600 text-white font-semibold text-[22px]'>Show All</button></Link>
             </Suspense>
             </div>
+
+          
         </div>
     );
 };

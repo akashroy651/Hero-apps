@@ -1,9 +1,13 @@
 import React from 'react';
+import { useLoaderData } from 'react-router';
+import Total from '../Total/Total';
 
 const About = () => {
+    const data = useLoaderData();
+    console.log(data)
     return (
         <div>
-            <h1>helo about</h1>
+            <Total data={data}></Total>
         </div>
     );
 };

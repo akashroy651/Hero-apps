@@ -3,15 +3,15 @@ import { LuDownload } from "react-icons/lu";
 import { IoStar } from "react-icons/io5";
 
 import img from '../../assets/demo-app (1).webp';
-import image from '../../assets/demo-app (2).webp'
+// import image from '../../assets/demo-app (2).webp'
 
 
 const Apps = ({ singleApps }) => {
-  console.log(singleApps);
+  // console.log(singleApps);
 
 
   const {title,companyName,ratings} = singleApps
-  console.log(ratings)
+  // console.log(ratings)
 
   return (
     <div>
@@ -19,7 +19,7 @@ const Apps = ({ singleApps }) => {
         <figure className=" ">
           <img
             // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-           src={img,image}
+           src={img}
             alt="Shoes"
             className="rounded-xl h-80"
           />
@@ -34,6 +34,8 @@ const Apps = ({ singleApps }) => {
           </div>
         </div>
       </div>
+      
+        
     </div>
   );
 };

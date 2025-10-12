@@ -7,6 +7,8 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import Installation from '../pages/Installation/Installation';
+import Total from '../pages/Total/Total';
+import AppsDetails from '../pages/AppsDetails/AppsDetails';
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +33,17 @@ export const router = createBrowserRouter([
         {
           path:'/installation',
           Component:Installation
+        },
+
+        {
+          index:true,
+          loader:()=>fetch('totalData.json'),
+          path:'/about',
+          Component:About
+        },
+        {
+          path:'/appsDetails/:id',
+          Component:AppsDetails
         }
     ]
   },

@@ -3,12 +3,21 @@ import React from "react";
 import image from '../../assets/logo.png'
 import { Link } from "react-router";
 
+import { FaGithub } from "react-icons/fa";
+
+const github = ()=>{
+    window.open("https://github.com/akashroy651","_blank");
+}
+
+
 const Navbar = () => {
     const links = <>
         <Link to='/'><li className="m-2 text-[#000000]">Home</li></Link>
         <Link to='/about'> <li className="m-2 text-[#000000]">Apps</li></Link>
         <Link to='/installation'><li className="m-2 text-[#000000]">Installation</li></Link>
     </>
+
+    
   return (
     <div className="navbar  shadow-sm">
       <div className="navbar-start">
@@ -39,7 +48,7 @@ const Navbar = () => {
         </div>
           <Link to='/'>
           <a className="btn btn-ghost text-xl text-pink-400">
-          <img src={image} className="w-5" alt="" />
+          <img src={image} className="w-13" alt="" />
           HERO.IO</a>
           </Link>
       </div>
@@ -51,7 +60,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-amber-700 border-0 text-white">Contribute</a>
+        <a onClick={github} className="btn bg-amber-700 border-0 text-white"><FaGithub />Contribute</a>
       </div>
     </div> 
   );
