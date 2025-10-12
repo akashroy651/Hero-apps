@@ -4,7 +4,7 @@ import Total from '../Total/Total';
 
 const About = () => {
     const data = useLoaderData();
-    console.log(data)
+    // console.log(data)
     return (
         <div>
             <Total data={data}></Total>

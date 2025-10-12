@@ -5,7 +5,7 @@ import { IoStar } from "react-icons/io5";
 import { Link } from 'react-router';
 
 const Totals = ({totalApps}) => {
-    console.log(totalApps)
+    // console.log(totalApps)
 
     const {title,companyName,id} = totalApps
     return (

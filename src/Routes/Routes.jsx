@@ -10,6 +10,7 @@ import Installation from '../pages/Installation/Installation';
 import Total from '../pages/Total/Total';
 import AppsDetails from '../pages/AppsDetails/AppsDetails';
 
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
     children: [
         {
             index:true,
-            loader:()=>fetch('heroData.json'),
+            loader:()=>fetch('/heroData.json'),
             path:"/",
             Component:Home,
         },
@@ -37,12 +38,14 @@ export const router = createBrowserRouter([
 
         {
           index:true,
-          loader:()=>fetch('totalData.json'),
+          loader:()=>fetch('/totalData.json'),
           path:'/about',
           Component:About
         },
         {
+          index:true,
           path:'/appsDetails/:id',
+           loader:()=>fetch('/totalData.json').then(res => res.json()),
           Component:AppsDetails
         }
     ]
