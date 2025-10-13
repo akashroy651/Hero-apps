@@ -25,7 +25,7 @@ const Apps = ({ singleApps }) => {
           />
         </figure>
         <div className=" h-[100px]">
-          <h2 className="mt-2 mb-6  bg-amber-600 w-full font-medium text-[20px] ">{title}:{companyName}</h2>
+          <h2 className="mt-2 mb-6  w-full font-medium text-[20px] ">{title}:{companyName}</h2>
           
           <div className="card-actions justify-between ">
             <button className="btn h-[30px] bg-gray-200 text-[#00D390] "><LuDownload />9M</button>
